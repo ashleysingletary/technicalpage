@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation of HTML & CSS</title>
+    <link rel="stylesheet" href="./styles.css"> 
+    <style>@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+#navbar {
+  background-color: rgb(177, 177, 233) ;
+  color: black;
+  font-weight: bold;
+  border: solid;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  position: fixed;
+  margin-top: 18px;
+  
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+}
+
+ul a {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  text-decoration: none;
+  border-bottom: solid;
+  padding: 14px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+}
+
+main {
+  background-color: rgb(107, 54, 76);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 18px;
+}
+
+.main-section { 
+    color: rgb(177, 177, 233);
+    margin-left: 260px;
+}
+
+nav header {
+  text-align: center;
+  font-size: 25px;
+  border-bottom: solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration-line: underline;
+}
+
+a[href~="#summary"] {
+  border-bottom: none; 
+}
+
+code {
+  background: rgb(221, 213, 213);
+  display: block;
+  padding: 20px;
+  border-radius: 3px;
+  margin: 18px;
+  color: black;
+}
+
+section header {
+  font-weight: bold;
+  font-size: 23px
+}
+
+section li {
+  padding: 12px 25px 0 25px;
+}
+
+.indent {
+  margin: 1em;
+}
+
+i {
+  font-weight: bold;
+}
+
+li span {
+  font-style: italic;
+}</style>
+  </head> 
+  <body>
+    <nav id="navbar">
+      <header>Documentation of <div>HTML & CSS</div></header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#html_anchor_element">HTML Anchor Element</a></li>
+        <li><a class="nav-link" href="#html_radio_button">HTML Radio Button</a></li>
+        <li><a class="nav-link" href="#html_textbox">HTML Textbox</a></li>
+        <li><a class="nav-link" href="#css_position_types">CSS Position Types</a></li>
+        <li><a class="nav-link" href="#css_transform_types">CSS Transform Types</a></li>
+        <li><a class="nav-link" href="#summary" >Summary</a></li>
+      </ul>
+    </nav>
+  <main id="main-doc">
+    <p>
+      <section class="main-section" id="introduction">
+        <header id="introduction">Introduction</header>
+        <p>HTML and CSS are the two coding processes that are known in the web design world. HTML is the base of the website in order to make it functional. CSS designs the website to look aestectically pleasing.</p>
+        <li>HTML - <span>Hypertext Markup Language</span></li>
+        <li>CSS - <span>Cascading Style Sheet</span></li> 
+      </section>
+    </p>
+    <p>
+      <section class="main-section" id="html_anchor_element">
+        <header>HTML Anchor Element</header>
+        <p>The anchor element creates a function for a highlighted value to be linked to another page.</p>
+        <code> < a href="https://freecodecamp.org" >FreeCodeCamp< / a ><p><i>Example:</i></p><a href="https://freecodecamp.org">FreeCodeCamp</a></code>
+      </section>
+    </p>
+    <p>
+      <section class="main-section" id="html_radio_button">
+        <header>HTML Radio Button</header>
+         <p>The radio button creates a button for the consumer to choose an answer on the website.</p>
+        <code>< label >< input id="freecodecamp" type="radio" name="freecodecamp" value="outdoor" > freecodecamp< /label ><div><p><i>Example:</i></p><label><input id="freecodecamp" type="radio" name="freecodecamp" value="outdoor"> freecodecamp</label></div></code>
+      </section>
+    </p>
+    <p>
+      <section class="main-section" id="html_textbox">
+        <header>HTML Textbox</header>
+        <p>The texbox gives the consumer an opportunity to express and comments or concerns an individual may have.</p>
+        <code>< textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Textarea is...">< / textarea > <p><i>Example:</i></p><textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Textarea is..."></textarea></code>
+      </section>
+    </p>
+    <p>
+      <section class="main-section" id="css_position_types">
+        <header>CSS Position Types</header>
+        <p>This design creates an opportunity for the designer to place whatever value on the anywhere on the website an indivual desides. </p>
+        <p>Position Types:</p>
+        <li>stactic</li>
+        <li>absolute</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>sticky</li>
+        <p><div><code>html { <p class="indent">position: absolute;</p><p>}</p></code></div></p>
+      </section>
+    </p>
+    <p>
+      <section class="main-section" id="css_transform_types">
+        <header id="css_transform_types">CSS Transform Types</header>
+        <p>This design allows the designer to shape-shift any value to compliment the website.</p>
+        <p>Transform Types:</p>
+        <li>translate()</li>
+        <li>rotate()</li>
+        <li>scale()</li>
+        <li>skew()</li>
+        <li>matrix()</li>
+        <p><div><code>html { <p class="indent">transform: rotate(3deg);</p><p>}</p></code></div></p>
+      </section></p>
+    <p>
+      <section class="main-section" id="summary">
+        <header id="summary">Summary</header>
+        <p>There are many rules and structures to coding. These are the few that are used to create a functional website. </p>
+      </section>
+    </p>
+  </main>
+  </body>
+</html>
+
